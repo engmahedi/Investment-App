@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Investment App</title>
+  
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+  <main>
+    <section id="appHeading" class="font-bold text-3xl text-center bg-blue-300 p-10 text-white">Investment APP</section>
+
+    <section>
+      <div class="container mx-auto grid grid-cols-12 gap-3 bg-green-100">
+        <div class="col-span-4 text-center bg-slate-100 shadow-md">Bangladesh</div>
+        <div class="col-span-8 text- bg-slate-100 shadow- p-10">
+      
+          <div class="bg-blue-200 text-center text-3xl p-20 font-bold">Total Amount = 1000 TK</div>
+          <div class="grid grid-cols-2 gap-10">
+            <div>
+              <h1 class="bg-teal-500 mt-10 p-5 text-center text-2xl font-bold text-white rounded-md">Deposit : <span id="depositAmount"></span> TK</h1>
+              <div class="bg-teal-300 p-10 mt-5 text-center">
+                <input id="depositInput" type="number"  class="p-2 outline-0 " placeholder="Type Amount">
+                <div class="mt-3">
+                  <button id="depositBtn" class="bg-green-500 p-3 rounded-md text-white font-semibold">Deposit Now</button>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h1 class="bg-teal-500 mt-10 p-5 text-center text-2xl font-bold text-white rounded-md">Withdrow : <span id="withdrowAmount"></span> TK</h1>
+              <div class="bg-teal-300 p-10 mt-5 text-center">
+                <input id="withdrowInput" type="number"  class="p-2 outline-0 " placeholder="Type Amount">
+                <div class="mt-3">
+                  <button id="withdrowBtn" class="bg-red-500 p-3 rounded-md text-white font-semibold">Withdrow Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div> 
+      
+      </div>
+    </section>
+  </main>
+
+  
+  <script src="./js/deposit.js"></script>
+  <script src="./js/withdrow.js"></script>
+</body>
+</html>

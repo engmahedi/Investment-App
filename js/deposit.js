@@ -1,5 +1,6 @@
 
 const depositBtn = document.getElementById("depositBtn");
+
 depositBtn.addEventListener("click", function () {
   const depositInput = document.getElementById("depositInput").value;
   document.getElementById("depositInput").value = '';

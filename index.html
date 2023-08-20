@@ -11,12 +11,14 @@
 <body>
 
   <main>
-    <section id="appHeading" class="font-bold text-3xl text-center bg-blue-300 p-10 text-white">Investment APP</section>
+    <section id="appHeading" class="font-bold text-3xl text-center bg-blue-200 p-10 text-slate-700">Investment APP</section>
 
     <section>
-      <div class="container mx-auto grid grid-cols-12 gap-3 bg-green-100">
-        <div class="col-span-4 text-center bg-slate-100 shadow-md">Bangladesh</div>
-        <div class="col-span-8 text- bg-slate-100 shadow- p-10">
+      <div class="container mx-auto grid grid-cols-12 gap-3 bg-green-100 p-5">
+        <div class="col-span-4 text-center bg-slate-100 shadow-md p-5 pt-10">
+          <canvas id="myChart"></canvas>
+        </div>
+        <div class="col-span-8 text- bg-slate-100 shadow-md p-10">
       
           <div class="bg-blue-200 text-center text-3xl p-20 font-bold">Total Amount = 1000 TK</div>
           <div class="grid grid-cols-2 gap-10">
@@ -47,6 +49,10 @@
   </main>
 
   
+
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./js/chart.js"></script>
   <script src="./js/deposit.js"></script>
   <script src="./js/withdrow.js"></script>
 </body>

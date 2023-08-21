@@ -7,7 +7,7 @@ const ctx = document.getElementById('myChart');
       datasets: [{
         label: 'TK',
         data: [1200, 1900, 15000],
-        borderWidth: 1
+        borderWidth: 2
       }]
     },
     options: {

@@ -5,7 +5,7 @@ depositBtn.addEventListener("click", function () {
   const depositInput = document.getElementById("depositInput").value;
   document.getElementById("depositInput").value = '';
   
-  if (depositInput >= 100) {
+  if (depositInput >= 100 && depositInput <=1000) {
     // Total Deposite Display
 
     const depositAmount = document.getElementById("depositAmount").innerText;
@@ -13,7 +13,7 @@ depositBtn.addEventListener("click", function () {
     document.getElementById("depositAmount").innerText = totalDeposit;
   
     // Total Amount Display
-    
+
     const balance = document.getElementById("balance").innerText;  
     const totalBalance = Math.floor(balance) + Math.floor(depositInput);
     document.getElementById("balance").innerText = totalBalance;

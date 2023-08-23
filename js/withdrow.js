@@ -9,7 +9,7 @@ withdrowBtn.addEventListener("click", function () {
   const balance = document.getElementById("balance").innerText;
 
   
-    if (withdrowInput < balance) {
+    if (withdrowInput < balance && withdrowInput>0){
     
       // Total Withdraw Display
       
@@ -19,13 +19,14 @@ withdrowBtn.addEventListener("click", function () {
   
       // Total Amount Display
   
-    
+     
     const totalBalance = Math.floor(balance) - Math.floor(withdrowInput);
     document.getElementById("balance").innerText=totalBalance;
   
       swal("Withdraw Sucessfull!", "Thank You", "success");
     } else {
-      swal("Insufficient amount!", "Minimum 100 TK", "error");
+
+      swal("Insufficient amount!", "Sorry", "error");
     }
   
     

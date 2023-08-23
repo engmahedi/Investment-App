@@ -5,7 +5,7 @@ depositBtn.addEventListener("click", function () {
   const depositInput = document.getElementById("depositInput").value;
   document.getElementById("depositInput").value = '';
   
-  if (depositInput >= 100 && depositInput <=1000) {
+  if (depositInput >= 100) {
     // Total Deposite Display
 
     const depositAmount = document.getElementById("depositAmount").innerText;
